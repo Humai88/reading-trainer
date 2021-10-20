@@ -9,7 +9,7 @@ function App() {
   }
 
   return (
-    <main>
+    <main aria-hidden="true">
       <Letters />
 
       <div onClick={refreshPage} className="img">

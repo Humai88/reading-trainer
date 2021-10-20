@@ -19,7 +19,6 @@ export const Draggable: React.FC<DraggablePropsType> = ({
   return (
     <div
       id={id}
-      // onTouchStart={dragMob}
       className={finalClasses}
       draggable
       onDragStart={drag}
