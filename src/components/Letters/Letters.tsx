@@ -7,12 +7,14 @@ import styles from "./Letters.module.css";
 export const Letters = () => {
   return (
     <div className={styles.wrapper}>
-      <Droppable id="dr2" className={styles.cellsWrapper}>
-        {cells.map((l, i) => (
-          <div key={i} className={styles.itemCell}>
-            {l}
-          </div>
-        ))}
+      <Droppable id="dr2">
+        <div className={styles.cellsWrapper}>
+          {cells.map((l, i) => (
+            <div key={i} className={styles.itemCell}>
+              {l}
+            </div>
+          ))}
+        </div>
       </Droppable>
       <Droppable id="dr1" className={styles.droppableLetters}>
         {vowels.map((l, i) => (

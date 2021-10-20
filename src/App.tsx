@@ -7,6 +7,7 @@ function App() {
   function refreshPage() {
     window.location.reload();
   }
+
   return (
     <main>
       <Letters />
