@@ -8,13 +8,11 @@ export const Draggable: React.FC<DraggablePropsType> = ({
   const drag = (e: React.DragEvent<HTMLDivElement>) => {
     e.dataTransfer.setData("transfer", (e.target as HTMLDivElement).id);
   };
-  // const dragMob = (e: React.TouchEvent<HTMLDivElement>) => {
-  //   e.preventDefault();
-  // };
 
   const notAllowDrop = (e: DragEvent<HTMLDivElement>) => {
     e.stopPropagation();
   };
+
   const finalClasses = `${className ? className : ""}`;
   return (
     <div

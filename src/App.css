@@ -9,21 +9,20 @@ body {
   font-family: "Balsamiq Sans", cursive;
 }
 
-main {
+.main {
   min-height: 100vh;
   width: 100%;
   padding: 0 5%;
-
   background-image: url("./assets/images/ezgif.com-gif-maker.webp");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  overflow-y: scroll;
-  top: 0;
+  /* position: fixed;
+  overflow-y: scroll; */
+  /* top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 
 .img {
@@ -37,15 +36,59 @@ main {
   color: #ff4c29;
   background-color: rgb(82, 82, 82);
   border-radius: 50%;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .img:hover {
   color: #fa3e19;
   background-color: rgb(59, 59, 59);
 }
+.img:active {
+  transform: scale(0.7);
+}
+.btn {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 2rem;
+  left: 5%;
+  cursor: pointer;
+  font-size: 6rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.btn:active {
+  transform: scale(0.7);
+}
+.btnStart {
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2rem;
+  color: #40b1f3;
+  background-color: rgb(82, 82, 82);
+}
+.btnStop {
+  top: 9rem;
+  color: #f34040;
+  background-color: rgb(82, 82, 82);
+}
+.btnStop:active {
+  transform: scale(0.7);
+}
 /* Media queries */
 @media only screen and (max-width: 992px) and (min-device-width: 601px) {
   .img {
+    font-size: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .btnStart {
+    font-size: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .btnStop {
     font-size: 5rem;
     width: 5rem;
     height: 5rem;
@@ -55,6 +98,19 @@ main {
   .img {
     font-size: 3rem;
     top: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .btnStart {
+    font-size: 3rem;
+    top: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .btnStop {
+    font-size: 3rem;
+    top: 0.2rem;
+    left: 4.5rem;
     width: 3rem;
     height: 3rem;
   }

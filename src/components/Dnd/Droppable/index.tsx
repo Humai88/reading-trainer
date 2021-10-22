@@ -10,9 +10,6 @@ export const Droppable: React.FC<DroppablePropsType> = ({
     const data = e.dataTransfer.getData("transfer");
     (e.target as HTMLDivElement).appendChild(document.getElementById(data)!);
   };
-  // const dropMob = (e: React.TouchEvent<HTMLDivElement>) => {
-  //   e.preventDefault();
-  // };
 
   const allowDrop = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -21,7 +18,6 @@ export const Droppable: React.FC<DroppablePropsType> = ({
   return (
     <div
       id={id}
-      // onTouchStart={dropMob}
       onDrop={drop}
       onDragOver={allowDrop}
       className={finalClasses}
