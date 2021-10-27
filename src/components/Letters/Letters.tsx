@@ -63,9 +63,9 @@ export const Letters: React.FC<PtopsType> = ({ paintMode }) => {
             id={v.id}
           />
         ))}
-        <Draggable id={v4()} className={styles.item}>
+        {/* <Draggable id={v4()} className={styles.item}>
           <BiRun style={{ color: "rgb(32, 32, 32)" }} />
-        </Draggable>
+        </Draggable> */}
       </Droppable>
       <input
         type="text"
