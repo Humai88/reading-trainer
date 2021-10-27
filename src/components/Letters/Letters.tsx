@@ -1,18 +1,14 @@
 import React, { ChangeEvent, useState } from "react";
 import { Droppable } from "../Dnd/Droppable/Droppable";
-import {
-  marksCells,
-  cells,
-  vowelsCells,
-  consonantsCells,
-  CellsType,
-} from "../../data/data";
+import { letters, cells, CellsType } from "../../data/data";
 import styles from "./Letters.module.css";
 import { Letter } from "./Letter";
 import { Canvas } from "../Drawing/Drawing";
 import { v4 } from "uuid";
+import { BiRun } from "react-icons/bi";
+import { Draggable } from "../Dnd/Draggable/Draggable";
+
 export const Letters: React.FC<PtopsType> = ({ paintMode }) => {
-  const letters = [...vowelsCells, ...consonantsCells, ...marksCells];
   const [data, setData] = useState<CellsType[]>(letters);
   const [newLetter, setNewLetter] = useState("");
   const addNewLetter = () => {
@@ -67,6 +63,9 @@ export const Letters: React.FC<PtopsType> = ({ paintMode }) => {
             id={v.id}
           />
         ))}
+        <Draggable id={v4()} className={styles.item}>
+          <BiRun style={{ color: "rgb(32, 32, 32)" }} />
+        </Draggable>
       </Droppable>
       <input
         type="text"

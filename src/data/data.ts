@@ -1,4 +1,5 @@
 import { v4 } from "uuid";
+
 export type CellsType = {
   id: string;
   content: string;
@@ -58,4 +59,5 @@ for (let i = 0; i <= marks.length - 1; i++) {
     content: marks[i],
   });
 }
+
 export const letters = [...vowelsCells, ...consonantsCells, ...marksCells];
