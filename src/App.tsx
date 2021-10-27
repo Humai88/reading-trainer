@@ -9,10 +9,18 @@ import { Preloader } from "./components/Preloader/Preloader";
 function App() {
   const [paintMode, setPaintMode] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1500);
+  // }, []);
+  const handleLoading = () => {
+    setIsLoading(false);
+  };
+
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1500);
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
   }, []);
   function refreshPage() {
     window.location.reload();
