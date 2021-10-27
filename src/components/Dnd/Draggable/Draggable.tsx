@@ -5,7 +5,7 @@ export const Draggable: React.FC<DraggablePropsType> = ({
   className,
   children,
 }) => {
-  const drag = (e: React.DragEvent<HTMLDivElement>) => {
+  const drag = (e: DragEvent<HTMLDivElement>) => {
     e.dataTransfer.setData("transfer", (e.target as HTMLDivElement).id);
   };
 

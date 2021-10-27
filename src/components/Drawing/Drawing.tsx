@@ -103,15 +103,13 @@ export const Canvas = ({ width, height }: CanvasProps) => {
     const canvas: HTMLCanvasElement = canvasRef.current;
     const context = canvas.getContext("2d");
     if (context) {
-      context.strokeStyle = "black";
+      context.strokeStyle = "#0f52ba";
       context.lineJoin = "round";
       context.lineWidth = 4;
-
       context.beginPath();
       context.moveTo(originalMousePosition.x, originalMousePosition.y);
       context.lineTo(newMousePosition.x, newMousePosition.y);
       context.closePath();
-
       context.stroke();
     }
   };

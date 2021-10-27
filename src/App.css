@@ -26,17 +26,17 @@ body {
 }
 
 .img {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
   top: 2rem;
   right: 5%;
   cursor: pointer;
-  font-size: 6rem;
-  color: #ff4c29;
+  font-size: 5rem;
+  color: #00b353;
   background-color: rgb(82, 82, 82);
   border-radius: 50%;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .img:hover {
   color: #fa3e19;
@@ -46,21 +46,21 @@ body {
   transform: scale(0.7);
 }
 .btn {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
   top: 2rem;
   left: 5%;
   cursor: pointer;
-  font-size: 6rem;
+  font-size: 5rem;
   border-radius: 50%;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .btn:active {
   transform: scale(0.7);
 }
 .btnStart {
-  font-size: 5rem;
+  font-size: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,13 +69,17 @@ body {
   background-color: rgb(82, 82, 82);
 }
 .btnStop {
-  top: 9rem;
+  top: 8rem;
   color: #f34040;
   background-color: rgb(82, 82, 82);
 }
-.btnStop:active {
-  transform: scale(0.7);
+.btnStart:hover {
+  color: #ffb830;
 }
+.btnStop:hover {
+  color: #00b353;
+}
+
 /* Media queries */
 @media only screen and (max-width: 992px) and (min-device-width: 601px) {
   .img {

@@ -1,4 +1,5 @@
 import React, { DetailedHTMLProps, HTMLAttributes, DragEvent } from "react";
+import { v4 } from "uuid";
 
 export const Droppable: React.FC<DroppablePropsType> = ({
   className,
@@ -8,7 +9,7 @@ export const Droppable: React.FC<DroppablePropsType> = ({
   const drop = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     const data = e.dataTransfer.getData("transfer");
-    (e.target as HTMLDivElement).appendChild(document.getElementById(data)!);
+    (e.target as HTMLDivElement).append(document.getElementById(data)!);
   };
 
   const allowDrop = (e: DragEvent<HTMLDivElement>) => {
@@ -16,12 +17,7 @@ export const Droppable: React.FC<DroppablePropsType> = ({
   };
   const finalClasses = `${className ? className : ""}`;
   return (
-    <div
-      id={id}
-      onDrop={drop}
-      onDragOver={allowDrop}
-      className={finalClasses}
-    >
+    <div id={id} onDrop={drop} onDragOver={allowDrop} className={finalClasses}>
       {children}
     </div>
   );

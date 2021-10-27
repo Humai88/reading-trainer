@@ -85,6 +85,41 @@
   flex-direction: column;
   justify-content: center;
 }
+input {
+  width: 4rem;
+  font-size: 1.5rem;
+  padding: 15px;
+  height: 3rem;
+  position: absolute;
+  top: 16rem;
+  border-radius: 1rem;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: none;
+  outline: none;
+}
+input:focus {
+  background-color: #ffc55a;
+}
+button {
+  width: 8rem;
+  position: absolute;
+  top: 20rem;
+  border-radius: 1rem;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: none;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1.4rem;
+  padding: 12px 0;
+  color: rgb(246, 246, 246);
+  background-color: #40b1f3;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+button:hover {
+  background-color: #fa3e19;
+}
 
 /* Media queries */
 @media only screen and (max-width: 992px) and (min-device-width: 601px) {

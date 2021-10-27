@@ -1,5 +1,5 @@
 import React, { DetailedHTMLProps, HTMLAttributes } from "react";
-import { Draggable } from "../Dnd/Draggable";
+import { Draggable } from "../Dnd/Draggable/Draggable";
 import styles from "./Letters.module.css";
 
 export const Letter: React.FC<LetterPropsType> = ({
