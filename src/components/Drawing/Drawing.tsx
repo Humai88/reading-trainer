@@ -103,7 +103,7 @@ export const Canvas = ({ width, height }: CanvasProps) => {
     const canvas: HTMLCanvasElement = canvasRef.current;
     const context = canvas.getContext("2d");
     if (context) {
-      context.strokeStyle = "#0f52ba";
+      context.strokeStyle = "rgb(32, 32, 32)";
       context.lineJoin = "round";
       context.lineWidth = 4;
       context.beginPath();
@@ -114,14 +114,7 @@ export const Canvas = ({ width, height }: CanvasProps) => {
     }
   };
 
-  return (
-    <canvas
-      // style={{ border: "1px solid red" }}
-      ref={canvasRef}
-      height={height}
-      width={width}
-    />
-  );
+  return <canvas ref={canvasRef} height={height} width={width} />;
 };
 
 Canvas.defaultProps = {
