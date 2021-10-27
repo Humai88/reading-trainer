@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/reading-trainer/static/css/main.58c2d704.chunk.css",
-    "main.js": "/reading-trainer/static/js/main.a30e5651.chunk.js",
-    "main.js.map": "/reading-trainer/static/js/main.a30e5651.chunk.js.map",
+    "main.js": "/reading-trainer/static/js/main.4b29bb63.chunk.js",
+    "main.js.map": "/reading-trainer/static/js/main.4b29bb63.chunk.js.map",
     "runtime-main.js": "/reading-trainer/static/js/runtime-main.9136a0e0.js",
     "runtime-main.js.map": "/reading-trainer/static/js/runtime-main.9136a0e0.js.map",
-    "static/js/2.e02bd7db.chunk.js": "/reading-trainer/static/js/2.e02bd7db.chunk.js",
-    "static/js/2.e02bd7db.chunk.js.map": "/reading-trainer/static/js/2.e02bd7db.chunk.js.map",
+    "static/js/2.c0f288d5.chunk.js": "/reading-trainer/static/js/2.c0f288d5.chunk.js",
+    "static/js/2.c0f288d5.chunk.js.map": "/reading-trainer/static/js/2.c0f288d5.chunk.js.map",
     "index.html": "/reading-trainer/index.html",
     "static/css/main.58c2d704.chunk.css.map": "/reading-trainer/static/css/main.58c2d704.chunk.css.map",
-    "static/js/2.e02bd7db.chunk.js.LICENSE.txt": "/reading-trainer/static/js/2.e02bd7db.chunk.js.LICENSE.txt",
+    "static/js/2.c0f288d5.chunk.js.LICENSE.txt": "/reading-trainer/static/js/2.c0f288d5.chunk.js.LICENSE.txt",
     "static/media/Color-Line-Loading.469acfd9.svg": "/reading-trainer/static/media/Color-Line-Loading.469acfd9.svg",
     "static/media/App.css": "/reading-trainer/static/media/ezgif.com-gif-maker.5c4d8052.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.9136a0e0.js",
-    "static/js/2.e02bd7db.chunk.js",
+    "static/js/2.c0f288d5.chunk.js",
     "static/css/main.58c2d704.chunk.css",
-    "static/js/main.a30e5651.chunk.js"
+    "static/js/main.4b29bb63.chunk.js"
   ]
 }
