@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState, KeyboardEvent } from "react";
 import { Droppable } from "../Dnd/Droppable/Droppable";
 import { letters, cells, CellsType } from "../../data/data";
 import styles from "./Letters.module.css";
@@ -73,6 +73,13 @@ export const Letters: React.FC<PtopsType> = ({ paintMode }) => {
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
           if (e.currentTarget.value.length <= 1) {
             setNewLetter(e.currentTarget.value);
+          } else {
+            return;
+          }
+        }}
+        onKeyPress={(e: KeyboardEvent<HTMLInputElement>) => {
+          if (e.key === "Enter" && e.currentTarget.value.length <= 1) {
+            addNewLetter();
           } else {
             return;
           }
