@@ -6,7 +6,7 @@ export type CellsType = {
 };
 
 export const cells: CellsType[] = [];
-for (let i = 0; i <= 35; i++) {
+for (let i = 0; i <= 41; i++) {
   cells.push({
     id: v4(),
     content: "",
